@@ -3,10 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Desired Dough Temperature</title>
   </head>
   <body>
     <script type="module" src="/src/main.ts"></script>
+    
+    <main>
+      <article id="inputs">
+        <h1 id="heading">Desired Dough Temperature</h1>    
+        <p id="description">description</p> 
+        <form>
+          <label>
+            Include preferment?
+            <input id="preferment-checkbox" type="checkbox">
+          </label><br/>
+          <label>
+            Desired Dough Temperature
+            <input id="ddt" type="number">
+          </label><br/>
+          <label>
+            Flour Temperature
+            <input id="flour" type="number">
+          </label><br/>
+          <label>
+            Room Temperature
+            <input id="room" type="number">
+          </label><br/>
+          <label>
+            Preferment Temperature
+            <input id="preferment" type="number">
+          </label><br/>
+          <label>
+            Friction Factor
+            <input id="friction" type="number">
+          </label><br/>
+        </form>
+      </article>
+
+      <article class="card">
+        <h4>How does the calculator work?</h4>
+        <p id="how">
+          bla blaa
+        </p>
+      </article>
+      <article class="card">
+        <h4>Why is desired dough temperature important?</h4>
+        <p id="why">
+          yo
+        </p>
+      </article>
+      
+    </main>
   </body>
 </html>
