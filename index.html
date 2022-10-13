@@ -10,10 +10,18 @@
   <body>
     <script type="module" src="/src/main.ts"></script>
     
+    <header>
+      <a href="https://github.com/scottross123/ddt-calculator">GitHub</a>
+    </header>
+
     <main>
       <article id="inputs">
         <h1 id="heading">Desired Dough Temperature</h1>    
-        <p id="description">description</p> 
+        <p id="description">
+          A calculator to determine the approximate water temperature to get to your desired dough temperature
+          based on the temperature of your flour, room, preferment, and heat from mixing. Change the values below
+          get the water temperature.
+        </p><br/> 
         <form>
           <label>
             Include preferment?
@@ -38,6 +46,10 @@
           <label>
             Friction Factor
             <input id="friction" type="number">
+          </label><br/>
+          <label>
+            Water Temperature
+            <p>temp</p>
           </label><br/>
         </form>
       </article>

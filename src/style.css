@@ -1,0 +1,40 @@
+* {
+}
+
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main {
+    margin: auto;
+    min-width: 300px;
+    max-width: 500px;
+    width: 40%;
+}
+
+h1, h4, p {
+    margin: 0;
+}
+
+input:not([type="checkbox"]) {
+    width: 100%;
+}
+
+label {
+    margin: 20px 0;
+}
+
+#heading {
+    margin-bottom: .5rem;
+}
+
+header {
+    height: 100px;
+}
+
+header a {
+    float: right;
+    margin: 1rem;
+}
