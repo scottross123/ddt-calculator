@@ -10,3 +10,10 @@ export const renderPreferment = () => {
     label.insertAdjacentElement('afterend', br);
     form!.insertBefore(label, waterLabel);
 }
+
+export const removePreferment = () => {
+    
+}
+
+const checkbox = document.getElementById("preferment-checkbox");
+checkbox!.addEventListener("click", renderPreferment);
