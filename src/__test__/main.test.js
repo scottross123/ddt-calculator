@@ -29,7 +29,7 @@ describe('test script', () => {
     });
 
     it.todo('test if preferment input is rendered if checkbox is checked', () => {
-        prefermentCheckbox!.click();
+        prefermentCheckbox.click();
         const preferment = document.getElementById("preferment");
         expect(preferment).not.toBeNull();
     })

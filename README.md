@@ -1,14 +1,15 @@
 # Desired Dough Temperature Calculator
 
+
 A simple desire dough temperature calculator. Calculates the temperature of water needed to mix a dough to its desired temperature.
 
 ## Objectives
 
-To learn Vim, apply test driven development on a small scale, and becoming more familar with vanilla JS DOM manipulation.
+To learn Vim, become more familar with testing, and becoming more familar with vanilla JS DOM manipulation.
 
 ## Technologies
 
-Created with Vite, Vanilla TypeScript, HTML, and CSS.
+Created with Vite, JavaScript, HTML, and CSS.
 
 Vitest used for testing.
 
