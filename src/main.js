@@ -3,7 +3,7 @@ export const renderPreferment = () => {
     label.setAttribute('id', 'preferment-label')
     label.innerHTML = `
         Preferment Temperature
-        <input class="temp-input" id="preferment" type="number">
+        <input class="temp-input" id="preferment" type="number" min=0 value=70>
     `;
     const form = document.getElementsByTagName('form').item(0);
     const frictionLabel = document.getElementById('friction-label');
@@ -27,7 +27,18 @@ checkbox.addEventListener("change", (event) => {
     }
 });
 
-const getMultiplicativeFactor = () => {
-    
+const getWaterTemperature = () => {
+    const temps = document.getElementsByClassName('temp-input');
+    const multiplicativeFactor = temps.length;
+    const ddt = document.getElementById('ddt').value;
+    const totalTempFactor = multiplicativeFactor * ddt;
+    const sumOfTemps = [...temps].reduce(
+        (prevTemp, currTemp) => prevTemp + parseInt(currTemp.value), 0
+    );
+    console.log(totalTempFactor - sumOfTemps);
+    return totalTempFactor - sumOfTemps;
 }
+
+const waterTemp = document.getElementById('water-temp');
+
 
