@@ -3,13 +3,11 @@ export const renderPreferment = () => {
     label.setAttribute('id', 'preferment-label')
     label.innerHTML = `
         Preferment Temperature
-        <input id="preferment" type="number">
+        <input class="temp-input" id="preferment" type="number">
     `;
     const form = document.getElementsByTagName('form').item(0);
-    const waterLabel = document.getElementById('water-label');
-    const br = document.createElement('br');
-    label.insertAdjacentElement('afterend', br);
-    form.insertBefore(label, waterLabel);
+    const frictionLabel = document.getElementById('friction-label');
+    form.insertBefore(label, frictionLabel);
 }
 
 export const removePreferment = () => {
@@ -20,11 +18,16 @@ export const removePreferment = () => {
 
 const checkbox = document.getElementById("preferment-checkbox");
 checkbox.addEventListener("change", (event) => {
-    if (event.currentTarget.checked) {
-        removePreferment();
-        console.log("hi")
+    if (event.target.checked) {
+        renderPreferment();       
+        console.log("checked:", event.target.checked)
     } else {
-        renderPreferment()
-        console.log('bye')
+        removePreferment();
+        console.log("unchecked:", event.target.checked)
     }
 });
+
+const getMultiplicativeFactor = () => {
+    
+}
+
