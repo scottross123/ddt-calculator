@@ -13,3 +13,6 @@ export const setWaterTemperature = () => {
     const waterTemp = document.getElementById('water-temp');
     waterTemp.innerHTML = `${waterTemperature}°F`;
 }
+
+// potentially refactor and add arguments to make this function more testable
+// remove function side effects
