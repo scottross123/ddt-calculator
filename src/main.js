@@ -14,7 +14,6 @@ export const renderPreferment = () => {
 
 export const removePreferment = () => {
     const preferment = document.getElementById('preferment-label');
-    //preferment.nextElementSibling.remove();
     preferment.remove();
     setWaterTemperature();
 }
@@ -23,28 +22,25 @@ const checkbox = document.getElementById("preferment-checkbox");
 checkbox.addEventListener("change", (event) => {
     if (event.target.checked) {
         renderPreferment();       
-        console.log("checked:", event.target.checked)
     } else {
         removePreferment();
-        console.log("unchecked:", event.target.checked)
     }
-});
+});   
 
-const getWaterTemperature = () => {
-    const temps = document.getElementsByClassName('temp-input');
+function setWaterTemperature() {
+     const temps = document.getElementsByClassName('temp-input');
     const multiplicativeFactor = temps.length;
     const ddt = document.getElementById('ddt').value;
     const totalTempFactor = multiplicativeFactor * ddt;
     const sumOfTemps = [...temps].reduce(
-        (prevTemp, currTemp) => prevTemp + parseInt(currTemp.value), 0
+        (prevTemp, currTemp) => {
+            if (currTemp.value === "") currTemp.value = 0; 
+            return prevTemp + parseInt(currTemp.value);
+        }, 0
     );
-    console.log(totalTempFactor - sumOfTemps);
-    return totalTempFactor - sumOfTemps;
-}
-
-function setWaterTemperature() {
+    const waterTemperature = totalTempFactor - sumOfTemps;
     const waterTemp = document.getElementById('water-temp');
-    waterTemp.innerHTML = `${getWaterTemperature()}°F`; 
+    waterTemp.innerHTML = `${waterTemperature}°F`; 
 }
 
 const ddt = document.getElementById('ddt');
