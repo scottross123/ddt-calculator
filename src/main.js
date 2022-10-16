@@ -8,12 +8,15 @@ export const renderPreferment = () => {
     const form = document.getElementsByTagName('form').item(0);
     const frictionLabel = document.getElementById('friction-label');
     form.insertBefore(label, frictionLabel);
+    addListenerToPreferment();
+    setWaterTemperature();
 }
 
 export const removePreferment = () => {
     const preferment = document.getElementById('preferment-label');
     //preferment.nextElementSibling.remove();
     preferment.remove();
+    setWaterTemperature();
 }
 
 const checkbox = document.getElementById("preferment-checkbox");
@@ -39,6 +42,28 @@ const getWaterTemperature = () => {
     return totalTempFactor - sumOfTemps;
 }
 
-const waterTemp = document.getElementById('water-temp');
+function setWaterTemperature() {
+    const waterTemp = document.getElementById('water-temp');
+    waterTemp.innerHTML = `${getWaterTemperature()}°F`; 
+}
+
+const ddt = document.getElementById('ddt');
+ddt.addEventListener("change", () => setWaterTemperature());
+
+const flour = document.getElementById('flour');
+flour.addEventListener("change", () => setWaterTemperature());
+
+const room = document.getElementById('room');
+room.addEventListener("change", () => setWaterTemperature());
+
+function addListenerToPreferment() {
+    const preferment = document.getElementById('preferment');
+    preferment.addEventListener("change", () => setWaterTemperature());
+}
+addListenerToPreferment();
+
+const friction = document.getElementById('friction');
+friction.addEventListener("change", () => setWaterTemperature());
 
 
+setWaterTemperature();
