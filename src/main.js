@@ -1,3 +1,5 @@
+import { accordion } from "./accordion.js";
+
 export const renderPreferment = () => {
     const label = document.createElement('label');
     label.setAttribute('id', 'preferment-label')
@@ -63,3 +65,4 @@ friction.addEventListener("change", () => setWaterTemperature());
 
 
 setWaterTemperature();
+accordion();

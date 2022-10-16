@@ -38,3 +38,22 @@ header a {
     float: right;
     margin: 1rem;
 }
+
+.accordion {
+
+}
+
+.accordion-header:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    /* probably change later because this makes it look like a link 8*/
+}
+
+.accordion-body {
+    display: none;
+}
+
+.accordion > .accordion-item.active > .accordion-body {
+    display: block;
+}
+
