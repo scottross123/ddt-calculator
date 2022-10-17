@@ -1,8 +1,8 @@
-import { setWaterTemperature } from "./setWaterTemperature.js";
+import { calculateWaterTemperature } from "./calculateWaterTemperature.ts";
 
 const addListenerToPreferment = () => {
     const preferment = document.getElementById('preferment');
-    preferment.addEventListener("change", () => setWaterTemperature());
+    preferment.addEventListener("change", () => calculateWaterTemperature());
 }
 
 const renderPreferment = () => {
@@ -31,6 +31,6 @@ export const setCheckboxEventListener = () => {
         } else {
             removePreferment();
         }
-        setWaterTemperature();
+        calculateWaterTemperature();
     });
 }
