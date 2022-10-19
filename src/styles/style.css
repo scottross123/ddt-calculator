@@ -24,6 +24,10 @@ h1 {
     font-size: var(--fs-xl);
 }
 
+p {
+    line-height: 1.25;
+}
+
 input, #water-temp {
     background-color: var(--clr-bg);
     border: 1px solid var(--clr-bg-content);
@@ -65,7 +69,11 @@ header {
 }
 
 footer {
-
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: var(--fs-xs);
+    font-style: italic;
 }
 
 header a {
@@ -104,3 +112,4 @@ select {
     border-radius: var(--rounded-sm);
     padding: .25rem;
 }
+
