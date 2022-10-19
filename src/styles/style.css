@@ -92,6 +92,7 @@ legend {
 fieldset {
     margin-bottom: .75rem;
     border-radius: var(--rounded-sm);
+    border: 1px solid var(--clr-bg-content);
 }
 
 #options {
@@ -111,5 +112,6 @@ select {
     background-color: var(--clr-bg);
     border-radius: var(--rounded-sm);
     padding: .25rem;
+    border: 1px solid var(--clr-bg-content);
 }
 

@@ -27,3 +27,15 @@
     --clr-bg-content: var(--clr-black-bean);
     --clr-accent: var(--clr-gray);
 }
+
+.boring-dark {
+    --clr-bg: var(--clr-dark);
+    --clr-bg-content: var(--clr-white);
+    --clr-accent: var(--clr-purp)
+}
+
+.emerald {
+    --clr-bg: var(--clr-emerald);
+    --clr-bg-content: var(--clr-white);
+    --clr-accent: var(--clr-rusty);
+}

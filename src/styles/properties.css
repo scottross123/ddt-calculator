@@ -36,6 +36,10 @@
     --clr-black-bean: #09090B;
     --clr-white: white;
     --clr-gray: #343232;
+    --clr-dark: #2A303C;
+    --clr-emerald: #66CC8A;
+    --clr-orange: #F28C18;
+    --clr-purp: #6D3A9C;
 
     /* default theme */
     --clr-primary: var(--clr-celtic-blue);

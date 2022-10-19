@@ -7,7 +7,7 @@ const addListenerToPreferment = () => {
 
 export const renderPreferment = () => {
     const label = document.createElement('label');
-    const form = document.querySelector('form');
+    const calculator = document.getElementById('calculator');
     const frictionLabel = document.getElementById('friction-label');
 
     label.setAttribute('id', 'preferment-label')
@@ -15,7 +15,7 @@ export const renderPreferment = () => {
         Preferment Temperature
         <input class="temp-input formula-input" id="preferment" type="number" min=0 value=70>
     `;
-    form!.insertBefore(label, frictionLabel);
+    calculator!.insertBefore(label, frictionLabel);
     addListenerToPreferment();
 }
 
