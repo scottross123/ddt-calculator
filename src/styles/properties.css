@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:401');
+
+:root {
+    /* fonts */
+    --ff-primary: 'Ubuntu', sans-serif;
+
+    /* font sizes, probably don't need all these */
+    --fs-xs: 0.8125rem;
+    --fs-sm: 0.875rem;
+    --fs-md: 0.9375rem;
+    --fs-lg: 1rem;
+    --fs-xl: 1.875rem;
+    --fs-xxl: 2.5rem;
+    --fs-lg-af: 3.5rem;
+
+    /* border */
+    --rounded-sm: .5rem;
+
+    /* colors 🌈 */
+
+    /* scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿 */
+    --clr-xiketic: #1b1725;
+    --clr-indepndence: #534b62;
+    --clr-heliotrope-gray: #3a499b3;
+    --clr-thistle: #d0bcd5;
+    --clr-celtic-blue: #226ce0;
+
+    /* theme - dark scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿 */
+
+    /* default theme */
+    --clr-primary: var(--clr-celtic-blue);
+    --clr-primary-text: white;
+    --clr-secondary: var(--clr-thistle);
+    --clr-bg: var(--clr-xiketic);
+    --clr-bg-text: var(--clr-thistle);
+}

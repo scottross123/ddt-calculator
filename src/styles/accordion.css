@@ -1,0 +1,26 @@
+@import "properties.css";
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.accordion-item {
+    background-color: bg();
+}
+
+.accordion-header:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    /* probably change later because this makes it look like a link 8*/
+}
+
+.accordion-body {
+    display: none;
+}
+
+.accordion > .accordion-item.active > .accordion-body {
+    display: block;
+}

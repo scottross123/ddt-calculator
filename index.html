@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desired Dough Temperature</title>
   </head>
@@ -27,34 +27,49 @@
           get the water temperature.
         </p>
         <form>
-          <label>
-            Include pre-ferment?
-            <input id="preferment-checkbox" type="checkbox" checked>
-          </label><br/>
-          <label>
-            Desired Dough Temperature
-            <input class="temp-input" id="ddt" type="number" min=0 value=78>
-          </label>
-          <label>
-            Flour Temperature
-            <input class="temp-input formula-input" id="flour" type="number" min=0 value=68>
-          </label>
-          <label>
-            Room Temperature
-            <input class="temp-input formula-input" id="room" type="number" min=0 value=68>
-          </label>
-          <label id="preferment-label">
-            Preferment Temperature
-            <input class="temp-input formula-input" id="preferment" type="number" min=0 value=70>
-          </label>
-          <label id="friction-label">
-            Friction Factor
-            <input class="temp-input formula-input" id="friction" type="number" min=0 value=26>
-          </label>
-          <label id="water-label">
-            Water Temperature
-            <p id="water-temp"></p>
-          </label>
+          <fieldset>
+            <legend>Options</legend>
+            <label for="preferment-checkbox">
+              Include pre-ferment?
+              <input id="preferment-checkbox" type="checkbox" checked>
+            </label><br/>
+            <label for="fahrenheit">
+              Fahrenheit
+              <input id="fahrenheit" type="radio" name="c-or-f" checked>
+            </label>
+            <label for="celsius">
+              Celsius
+              <input id="celsius" type="radio" name="c-or-f">
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Calculator</legend>
+            <label class="temp-label" for="ddt">
+              Desired Dough Temperature
+              <input class="temp-input" id="ddt" type="number" min=0 value=78>
+            </label>
+            <label class="temp-label" for="flour">
+              Flour Temperature
+              <input class="temp-input formula-input" id="flour" type="number" min=0 value=68>
+            </label>
+            <label class="temp-label" for="room">
+              Room Temperature
+              <input class="temp-input formula-input" id="room" type="number" min=0 value=68>
+            </label>
+            <label class="temp-label" for="preferment" id="preferment-label">
+              Preferment Temperature
+              <input class="temp-input formula-input" id="preferment" type="number" min=0 value=70>
+            </label>
+            <label class="temp-label" for="friction" id="friction-label">
+              Friction Factor
+              <input class="temp-input formula-input" id="friction" type="number" min=0 value=26>
+            </label>
+            <label class="temp-label" for="water-temp" id="water-label">
+              Water Temperature
+              <p id="water-temp"></p>
+            </label>
+          </fieldset>
         </form>
       </section>
       <section class="accordion">
