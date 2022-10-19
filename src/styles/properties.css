@@ -39,15 +39,7 @@
     --clr-dark: #2A303C;
     --clr-emerald: #66CC8A;
     --clr-orange: #F28C18;
-    --clr-purp: #6D3A9C;
-
-    /* default theme */
-    --clr-primary: var(--clr-celtic-blue);
-    --clr-primary-content: var(--clr-white);
-    --clr-secondary: var(--clr-thistle);
-    --clr-accent: var(--clr-greenish);
-    --clr-accent-200: var(--clr-greenish-200);
-    --clr-bg: var(--clr-xiketic);
-    --clr-bg-content: var(--clr-thistle);
+    --clr-cherry: #D2042D;
 }
+
 

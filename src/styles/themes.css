@@ -36,6 +36,6 @@
 
 .emerald {
     --clr-bg: var(--clr-emerald);
-    --clr-bg-content: var(--clr-white);
-    --clr-accent: var(--clr-rusty);
+    --clr-bg-content: var(--clr-dark);
+    --clr-accent: var(--clr-cherry);
 }
