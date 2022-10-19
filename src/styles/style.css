@@ -97,3 +97,10 @@ fieldset {
 #theme-picker {
     width: 100%;
 }
+
+select {
+    color: var(--clr-bg-content);
+    background-color: var(--clr-bg);
+    border-radius: var(--rounded-sm);
+    padding: .25rem;
+}
