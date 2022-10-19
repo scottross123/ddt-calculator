@@ -13,14 +13,33 @@
 
 .accordion-header:hover {
     cursor: pointer;
-    text-decoration: underline;
-    /* probably change later because this makes it look like a link 8*/
+    color: var(--clr-accent);
 }
 
 .accordion-body {
+    margin-top: .5rem;
     display: none;
+    font-size: var(--fs-sm);
 }
 
 .accordion > .accordion-item.active > .accordion-body {
     display: block;
 }
+
+.accordion-header:after {
+    content: '+'; /* Unicode character for "plus" sign (+) */
+    font-size: var(--fs-sm);
+    color: var(--clr-bg-content);
+    float: right;
+    margin-left: 0;
+}
+
+.accordion-item.active .accordion-header:after  {
+    content: "-"; /* Unicode character for "minus" sign (-) */
+    color: var(--clr-accent);
+}
+
+.accordion-item.active .accordion-header, .accordion-header:hover:after {
+    color: var(--clr-accent);
+}
+

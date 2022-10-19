@@ -25,12 +25,25 @@
     --clr-thistle: #d0bcd5;
     --clr-celtic-blue: #226ce0;
 
-    /* theme - dark scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿 */
+    --clr-greenish: #00C9A7;
+    --clr-greenish-200: #00C9A780;
+
+    --clr-royal-yellow: #FFD228;
+    --clr-royal-red: #B4001E;
+
+    --clr-rusty: #FF8066;
+
+    --clr-black-bean: #09090B;
+    --clr-white: white;
+    --clr-gray: #343232;
 
     /* default theme */
     --clr-primary: var(--clr-celtic-blue);
-    --clr-primary-text: white;
+    --clr-primary-content: var(--clr-white);
     --clr-secondary: var(--clr-thistle);
+    --clr-accent: var(--clr-greenish);
+    --clr-accent-200: var(--clr-greenish-200);
     --clr-bg: var(--clr-xiketic);
-    --clr-bg-text: var(--clr-thistle);
+    --clr-bg-content: var(--clr-thistle);
 }
+

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desired Dough Temperature</title>
   </head>
-  <body>
+  <body class="purplish">
     <script type="module" src="/src/ts/main.ts"></script>
     
     <header>
@@ -22,25 +22,39 @@
       <section id="inputs">
         <h1 id="heading">Desired Dough Temperature</h1>    
         <p id="description">
-          A calculator to determine the approximate water temperature to get to your desired dough temperature
+          This calculator determines the approximate water temperature to get to your desired dough temperature
           based on the temperature of your flour, room, pre-ferment, and heat from mixing. Change the values below
           get the water temperature.
         </p>
         <form>
-          <fieldset>
+          <fieldset id="options">
             <legend>Options</legend>
-            <label for="preferment-checkbox">
-              Include pre-ferment?
-              <input id="preferment-checkbox" type="checkbox" checked>
-            </label><br/>
-            <label for="fahrenheit">
-              Fahrenheit
-              <input id="fahrenheit" type="radio" name="c-or-f" checked>
-            </label>
-            <label for="celsius">
-              Celsius
-              <input id="celsius" type="radio" name="c-or-f">
-            </label>
+             <div class="option-wrapper">
+              <label for="preferment-checkbox">
+                Include pre-ferment?
+                <input id="preferment-checkbox" type="checkbox" checked>
+              </label><br/>
+              <label for="fahrenheit">
+                Fahrenheit
+                <input id="fahrenheit" type="radio" name="c-or-f" checked>
+              </label>
+              <label for="celsius">
+                Celsius
+                <input id="celsius" type="radio" name="c-or-f">
+              </label>
+            </div>
+            <div class="option-wrapper">
+              <label for="theme-picker">
+                Theme
+                <select id="theme-picker">
+                  <option disabled>select a theme</option>
+                  <option>scotland</option>
+                  <option>purplish</option>
+                  <option>boring</option>
+                  <option>boring dark</option>
+                </select>
+              </label>
+            </div>
           </fieldset>
 
           <fieldset>
@@ -58,7 +72,7 @@
               <input class="temp-input formula-input" id="room" type="number" min=0 value=68>
             </label>
             <label class="temp-label" for="preferment" id="preferment-label">
-              Preferment Temperature
+              Pre-ferment Temperature
               <input class="temp-input formula-input" id="preferment" type="number" min=0 value=70>
             </label>
             <label class="temp-label" for="friction" id="friction-label">

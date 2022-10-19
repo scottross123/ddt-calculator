@@ -1,0 +1,29 @@
+@import "properties.css";
+/* theme classes */
+
+.purplish {
+    --clr-primary: var(--clr-celtic-blue);
+    --clr-primary-content: var(--clr-white);
+    --clr-secondary: var(--clr-thistle);
+    --clr-accent: var(--clr-greenish);
+    --clr-accent-200: var(--clr-greenish-200);
+    --clr-bg: var(--clr-xiketic);
+    --clr-bg-content: var(--clr-thistle);
+}
+
+.scotland {
+    --clr-primary: var(--clr-royal-yellow);
+    --clr-primary-content: var(--clr-white);
+    --clr-secondary: var(--clr-royal-red);
+    --clr-accent: var(--clr-royal-yellow);
+    --clr-accent-200: var(--clr-royal-yellow);
+    --clr-bg: var(--clr-celtic-blue);
+    --clr-bg-content: var(--clr-white);
+}
+
+.boring {
+    --clr-primary: var();
+    --clr-bg: var(--clr-white);
+    --clr-bg-content: var(--clr-black-bean);
+    --clr-accent: var(--clr-gray);
+}

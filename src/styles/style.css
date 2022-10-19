@@ -5,7 +5,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     font-family: var(--ff-primary);
-    color: var(--clr-bg-text);
+    color: var(--clr-bg-content);
     background-color: var(--clr-bg);
 }
 
@@ -20,14 +20,18 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
+h1 {
+    font-size: var(--fs-xl);
+}
+
 input, #water-temp {
     background-color: var(--clr-bg);
-    border: 1px solid var(--clr-bg-text);
-    color: var(--clr-bg-text);
+    border: 1px solid var(--clr-bg-content);
+    color: var(--clr-bg-content);
 }
 
 path {
-    fill: var(--clr-bg-text);
+    fill: var(--clr-bg-content);
 }
 
 .temp-input, #water-temp {
@@ -53,7 +57,7 @@ path {
 }
 
 #water-temp {
-
+    font-weight: bold;
 }
 
 header {
@@ -82,3 +86,14 @@ fieldset {
     border-radius: var(--rounded-sm);
 }
 
+#options {
+    display: flex;
+}
+
+.option-wrapper {
+    flex: 1;
+}
+
+#theme-picker {
+    width: 100%;
+}
