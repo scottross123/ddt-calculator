@@ -8,7 +8,15 @@ const storeTheme = (theme: Theme) => {
 export const applyTheme = () => {
     const colorThemes = document.querySelectorAll('[name="theme"]');
     const currentTheme = localStorage.getItem("theme");
-    if (currentTheme === null) storeTheme("boring-dark"); // default theme
+    console.log(currentTheme);
+    if (currentTheme === null) {
+        const defaultTheme = "boring-dark";
+        const defaultThemeOption = document.getElementById(defaultTheme) as HTMLInputElement;
+        storeTheme(defaultTheme);
+        document.body!.className = defaultTheme;
+        defaultThemeOption.checked = true;
+        return;
+    }
     colorThemes.forEach(theme => {
         const themeOption = theme as HTMLInputElement;
         if (themeOption.id === currentTheme) {
