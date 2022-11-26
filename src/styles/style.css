@@ -99,10 +99,7 @@ fieldset {
 
 #options {
     display: flex;
-}
-
-.option-wrapper {
-    flex: 1;
+    justify-content: space-between;
 }
 
 #theme-picker {
@@ -121,7 +118,7 @@ fieldset {
     height: 1rem;
     border: 2px solid gray;
     outline-offset: 3px;
-    border-radius: 25%;
+    border-radius: .25rem;
     margin: 0;
 }
 
@@ -151,14 +148,6 @@ fieldset {
 
 #emerald {
     --radio-color: var(--clr-emerald);
-}
-
-select {
-    color: var(--clr-bg-content);
-    background-color: var(--clr-bg);
-    border-radius: var(--rounded-sm);
-    padding: .25rem;
-    border: 1px solid var(--clr-bg-content);
 }
 
 .hidden {
