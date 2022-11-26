@@ -3,7 +3,7 @@ import { accordion } from "./accordion.js";
 import { setInputEventListeners } from "./setInputEventListeners.js";
 import { setCheckboxEventListener }  from "./setCheckboxEventListener";
 import { removePreferment, renderPreferment } from "./preferment";
-import { setThemePickerListener } from "./setThemePickerListener";
+import { setThemePickerListener, applyTheme } from "./theme";
 
 const $ = {
     tempInputs: document.getElementsByClassName('temp-input'),
@@ -14,7 +14,13 @@ const $ = {
 
 setInputEventListeners($.tempInputs, setWaterTemperature);
 accordion($.accordionItems);
-setCheckboxEventListener($.prefermentCheckbox!, renderPreferment, removePreferment, setWaterTemperature);
+setCheckboxEventListener(
+    $.prefermentCheckbox!,
+    renderPreferment,
+    removePreferment,
+    setWaterTemperature
+);
 setWaterTemperature();
+applyTheme();
 setThemePickerListener($.themePicker!);
 
