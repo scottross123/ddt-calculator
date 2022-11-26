@@ -10,9 +10,11 @@ export const renderPreferment = () => {
     const calculator = document.getElementById('calculator');
     const frictionLabel = document.getElementById('friction-label');
 
-    label.setAttribute('id', 'preferment-label')
+    label.setAttribute('id', 'preferment-label');
+    label.setAttribute('class', 'temp-label');
+    label.setAttribute('for', 'preferment');
     label.innerHTML = `
-        Preferment Temperature
+        Pre-Ferment Temperature
         <input class="temp-input formula-input" id="preferment" type="number" min=0 value=70>
     `;
     calculator!.insertBefore(label, frictionLabel);
