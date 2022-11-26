@@ -31,7 +31,7 @@
 .boring-dark {
     --clr-bg: var(--clr-dark);
     --clr-bg-content: var(--clr-white);
-    --clr-accent: var(--clr-purp)
+    --clr-accent: var(--clr-xiketic);
 }
 
 .emerald {

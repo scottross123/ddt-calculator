@@ -65,7 +65,10 @@ path {
 }
 
 header {
-    height: 50px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer {
@@ -77,8 +80,7 @@ footer {
 }
 
 header a {
-    float: right;
-    margin: 1rem;
+   padding: 1rem;
 }
 
 label {
@@ -104,7 +106,51 @@ fieldset {
 }
 
 #theme-picker {
-    width: 100%;
+    width: fit-content;
+    border: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 1rem;
+    /*background-color: var(--clr-bg-content);*/
+}
+
+#theme-picker input[type="radio"] {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid gray;
+    outline-offset: 3px;
+    border-radius: 25%;
+    margin: 0;
+}
+
+#theme-picker input[type="radio"] {
+    background-color: var(--radio-color);
+}
+
+#theme-picker input[type="radio"]:checked {
+    border-color: var(--clr-bg-content);
+}
+
+#purplish {
+    --radio-color: var(--clr-xiketic);
+}
+
+#scotland {
+    --radio-color: var(--clr-celtic-blue);
+}
+
+#boring {
+    --radio-color: var(--clr-white);
+}
+
+#boring-dark {
+    --radio-color: var(--clr-dark);
+}
+
+#emerald {
+    --radio-color: var(--clr-emerald);
 }
 
 select {
@@ -113,5 +159,15 @@ select {
     border-radius: var(--rounded-sm);
     padding: .25rem;
     border: 1px solid var(--clr-bg-content);
+}
+
+.hidden {
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
