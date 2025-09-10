@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "jsdom": "^20.0.1",
-    "vite": "^3.1.0",
-    "vitest": "^0.24.1"
+    "vite": "^7.1.5",
+    "vitest": "^3.2.4"
   }
 }
